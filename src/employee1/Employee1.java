@@ -62,12 +62,15 @@ public class Employee1 {
     /**
      * @param args the command line arguments
      */
-    // v2
+    // v3
     public static void main(String[] args) 
     throws IOException {
 	Employee1 theApp = new Employee1();
 	
-	theApp
+	theApp.init(args);
+	theApp.run();
+	theApp.usage();
+	theApp.wrap();
 	
     }
     
