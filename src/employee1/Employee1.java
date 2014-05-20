@@ -6,6 +6,7 @@
 
 package employee1;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -28,7 +29,9 @@ public class Employee1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    // v2
+    public static void main(String[] args) 
+    throws IOException {
 	
 	
     }
