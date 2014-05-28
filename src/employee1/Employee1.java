@@ -24,7 +24,7 @@ public class Employee1 {
     private int age;
     List addressList;
     
-    // v1
+    // v2
     private String init(String[] args){
 	br = new BufferedReader(new InputStreamReader(System.in));
 	String temp = "";
@@ -35,6 +35,7 @@ public class Employee1 {
 	    }
 	    System.out.println();
 	}
+	System.out.println("in init()");	
 	return temp;
     }
     
