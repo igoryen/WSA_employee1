@@ -33,19 +33,20 @@ public class Employee1 {
 	addressList = Collections.emptyList();
     }
 
-    // v1
+    // v2
     public Employee1(String nam, int years, List addresses){
 	name = new String(nam);
 	age = years;
-	addressList = new ArrayList(addresses);
+	addressList = setAddresses(addresses);
     }
     
-    // v1
-    private void setAddresses(ArrayList addrs){
+    // v2
+    private List setAddresses(List addrs){
 	List addresses = Collections.emptyList();
 	for(int i = 0; i < addrs.size(); i++){
 	    addresses.add(addrs.get(i));
 	}
+	return addresses;
     }
     
     // v2
