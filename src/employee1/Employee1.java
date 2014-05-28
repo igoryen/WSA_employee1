@@ -40,6 +40,14 @@ public class Employee1 {
 	addressList = new ArrayList(addresses);
     }
     
+    // v1
+    private void setAddresses(ArrayList addrs){
+	List addresses = Collections.emptyList();
+	for(int i = 0; i < addrs.size(); i++){
+	    addresses.add(addrs.get(i));
+	}
+    }
+    
     // v2
     private String init(String[] args){
 	br = new BufferedReader(new InputStreamReader(System.in));
