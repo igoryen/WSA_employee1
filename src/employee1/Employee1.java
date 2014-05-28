@@ -9,6 +9,7 @@ package employee1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -24,6 +25,13 @@ public class Employee1 {
     private int age;
     List addressList;
     
+    //v1
+    public Employee1(){
+	name = new String("");
+	age = 0;
+	addressList = Collections.emptyList();
+    }
+
     // v2
     private String init(String[] args){
 	br = new BufferedReader(new InputStreamReader(System.in));
