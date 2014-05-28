@@ -64,8 +64,9 @@ public class Employee1 {
 	return temp;
     }
     
+    // v1
     private void run(){
-	
+	System.out.println(getName());
     }
     
     private void usage(){
