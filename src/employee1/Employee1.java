@@ -82,9 +82,11 @@ public class Employee1 {
     public String getName(){
       return name;
     }
-    //..............
-    //..............
-    //..............
+    
+    // v1
+    public void setName(String n){
+	name = new String(n);
+    }
 
     /**
      * @param args the command line arguments
